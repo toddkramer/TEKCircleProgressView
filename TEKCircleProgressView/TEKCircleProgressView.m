@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) UIView *maskingView;
 @property (nonatomic, strong) UILabel *percentageLabel;
-@property (nonatomic, assign) float minDiameter;
 @property (nonatomic, assign) TEKProgressViewColorGradient colorGradient;
 @property (nonatomic, assign) float percentage;
 @property (nonatomic, assign) float percentageLabelFontSize;
