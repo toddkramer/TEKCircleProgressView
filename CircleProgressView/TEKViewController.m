@@ -7,8 +7,12 @@
 //
 
 #import "TEKViewController.h"
+#import "TEKCircleProgressView.h"
 
 @interface TEKViewController ()
+
+@property (strong, nonatomic) IBOutlet UISlider *percentageSlider;
+@property (strong, nonatomic) TEKCircleProgressView *progressView;
 
 @end
 
@@ -17,13 +21,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    self.progressView = [[TEKCircleProgressView alloc] initWithOrigin:CGPointMake(100, 100) size:TEKProgressViewSizeMedium percentage:self.percentageSlider.value colorGradient:TEKProgressViewColorGradientBlue];
+    [self.view addSubview:self.progressView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)sliderValueChange:(id)sender {
+    [self.progressView updateViewForPercentage:self.percentageSlider.value];
 }
 
 @end

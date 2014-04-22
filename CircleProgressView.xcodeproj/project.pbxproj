@@ -14,7 +14,6 @@
 		9B3CFD9D1905EBD5003B3438 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CFD9C1905EBD5003B3438 /* main.m */; };
 		9B3CFDA11905EBD5003B3438 /* TEKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CFDA01905EBD5003B3438 /* TEKAppDelegate.m */; };
 		9B3CFDA41905EBD5003B3438 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CFDA21905EBD5003B3438 /* Main_iPhone.storyboard */; };
-		9B3CFDA71905EBD5003B3438 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CFDA51905EBD5003B3438 /* Main_iPad.storyboard */; };
 		9B3CFDAA1905EBD5003B3438 /* TEKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CFDA91905EBD5003B3438 /* TEKViewController.m */; };
 		9B3CFDAC1905EBD5003B3438 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CFDAB1905EBD5003B3438 /* Images.xcassets */; };
 		9B3CFDB31905EBD5003B3438 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3CFDB21905EBD5003B3438 /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		9B3CFDB51905EBD5003B3438 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3CFD941905EBD5003B3438 /* UIKit.framework */; };
 		9B3CFDBD1905EBD5003B3438 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3CFDBB1905EBD5003B3438 /* InfoPlist.strings */; };
 		9B3CFDBF1905EBD5003B3438 /* CircleProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3CFDBE1905EBD5003B3438 /* CircleProgressViewTests.m */; };
+		9BC21C511905ED41000416A3 /* TEKCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21C501905ED41000416A3 /* TEKCircleProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		9B3CFD9F1905EBD5003B3438 /* TEKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEKAppDelegate.h; sourceTree = "<group>"; };
 		9B3CFDA01905EBD5003B3438 /* TEKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEKAppDelegate.m; sourceTree = "<group>"; };
 		9B3CFDA31905EBD5003B3438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		9B3CFDA61905EBD5003B3438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		9B3CFDA81905EBD5003B3438 /* TEKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEKViewController.h; sourceTree = "<group>"; };
 		9B3CFDA91905EBD5003B3438 /* TEKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEKViewController.m; sourceTree = "<group>"; };
 		9B3CFDAB1905EBD5003B3438 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		9B3CFDBA1905EBD5003B3438 /* CircleProgressViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CircleProgressViewTests-Info.plist"; sourceTree = "<group>"; };
 		9B3CFDBC1905EBD5003B3438 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B3CFDBE1905EBD5003B3438 /* CircleProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleProgressViewTests.m; sourceTree = "<group>"; };
+		9BC21C4F1905ED41000416A3 /* TEKCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEKCircleProgressView.h; path = TEKCircleProgressView/TEKCircleProgressView.h; sourceTree = SOURCE_ROOT; };
+		9BC21C501905ED41000416A3 /* TEKCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEKCircleProgressView.m; path = TEKCircleProgressView/TEKCircleProgressView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +115,11 @@
 		9B3CFD961905EBD5003B3438 /* CircleProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				9BC21C4F1905ED41000416A3 /* TEKCircleProgressView.h */,
+				9BC21C501905ED41000416A3 /* TEKCircleProgressView.m */,
 				9B3CFD9F1905EBD5003B3438 /* TEKAppDelegate.h */,
 				9B3CFDA01905EBD5003B3438 /* TEKAppDelegate.m */,
 				9B3CFDA21905EBD5003B3438 /* Main_iPhone.storyboard */,
-				9B3CFDA51905EBD5003B3438 /* Main_iPad.storyboard */,
 				9B3CFDA81905EBD5003B3438 /* TEKViewController.h */,
 				9B3CFDA91905EBD5003B3438 /* TEKViewController.m */,
 				9B3CFDAB1905EBD5003B3438 /* Images.xcassets */,
@@ -232,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3CFDA71905EBD5003B3438 /* Main_iPad.storyboard in Resources */,
 				9B3CFDAC1905EBD5003B3438 /* Images.xcassets in Resources */,
 				9B3CFDA41905EBD5003B3438 /* Main_iPhone.storyboard in Resources */,
 				9B3CFD9B1905EBD5003B3438 /* InfoPlist.strings in Resources */,
@@ -254,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC21C511905ED41000416A3 /* TEKCircleProgressView.m in Sources */,
 				9B3CFD9D1905EBD5003B3438 /* main.m in Sources */,
 				9B3CFDA11905EBD5003B3438 /* TEKAppDelegate.m in Sources */,
 				9B3CFDAA1905EBD5003B3438 /* TEKViewController.m in Sources */,
@@ -293,14 +295,6 @@
 				9B3CFDA31905EBD5003B3438 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		9B3CFDA51905EBD5003B3438 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B3CFDA61905EBD5003B3438 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		9B3CFDBB1905EBD5003B3438 /* InfoPlist.strings */ = {
@@ -395,6 +389,7 @@
 				GCC_PREFIX_HEADER = "CircleProgressView/CircleProgressView-Prefix.pch";
 				INFOPLIST_FILE = "CircleProgressView/CircleProgressView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,6 +403,7 @@
 				GCC_PREFIX_HEADER = "CircleProgressView/CircleProgressView-Prefix.pch";
 				INFOPLIST_FILE = "CircleProgressView/CircleProgressView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +467,7 @@
 				9B3CFDC41905EBD5003B3438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B3CFDC51905EBD5003B3438 /* Build configuration list for PBXNativeTarget "CircleProgressViewTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +476,7 @@
 				9B3CFDC71905EBD5003B3438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
