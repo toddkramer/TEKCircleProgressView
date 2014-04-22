@@ -119,8 +119,12 @@ const float kTEKFontSizeLarge = 24.0;
     [self addSubview:self.percentageLabel];
 }
 
+-(UIColor *)grayBackgroundColor {
+    return [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1.0];
+}
+
 -(void)updateProgressView {
-    self.backgroundColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1.0];
+    self.backgroundColor = [self grayBackgroundColor];
     self.layer.cornerRadius = self.frame.size.height / 2;
     self.layer.masksToBounds = YES;
     

@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
 	
-    self.progressView = [[TEKCircleProgressView alloc] initWithOrigin:CGPointMake(100, 100) size:TEKProgressViewSizeMedium percentage:self.percentageSlider.value colorGradient:TEKProgressViewColorGradientBlue];
+    self.progressView = [[TEKCircleProgressView alloc] initWithOrigin:CGPointMake(100, 100) size:TEKProgressViewSizeMedium percentage:self.percentageSlider.value colorGradient:TEKProgressViewColorGradientRedGreen];
     [self.view addSubview:self.progressView];
 }
 
