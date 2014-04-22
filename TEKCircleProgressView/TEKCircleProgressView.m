@@ -35,12 +35,7 @@ const float kTEKFontSizeLarge = 24.0;
 
 - (id)initWithFrame:(CGRect)frame
 {
-    float frameWidth = frame.size.width;
-    float frameHeight = frame.size.height;
-    if (!(frameWidth == frameHeight)) {
-        frameHeight = frameWidth;
-    }
-    float dimension = frameWidth;
+    float dimension = frame.size.width;
     
     TEKProgressViewSize size;
     if (dimension > 125) {
@@ -72,9 +67,6 @@ const float kTEKFontSizeLarge = 24.0;
         case TEKProgressViewSizeLarge:
             progressViewSize = [self squareSizeWithDimension:kTEKProgressViewSizeLargeDimension];
             _percentageLabelFontSize = kTEKFontSizeLarge;
-            break;
-            
-        default:
             break;
     }
     self = [super initWithFrame:CGRectMake(origin.x, origin.y, progressViewSize.width, progressViewSize.height)];
